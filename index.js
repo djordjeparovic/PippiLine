@@ -53,8 +53,13 @@ PippiLine.prototype.run = function (pipeline, callback) {
             this._tasks.push(this.addParallelTask(pipeTask).bind(this));
         } else if (typeof pipeTask === 'function') {
             this._tasks.push(function (prevResults, cb) {
-                this._results.push(prevResults);
-                pipeTask(this._results, cb);
+                if (typeof prevResults === 'function') {
+                    cb = prevResults;
+                    pipeTask(this._results, cb);
+                } else {
+                    this._results.push(prevResults);
+                    pipeTask(this._results, cb);
+                }
             }.bind(this));
             
         } else {
