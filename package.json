@@ -1,0 +1,28 @@
+{
+  "name": "pippiline",
+  "version": "1.0.0",
+  "description": "Module which enables more readable syntax for combining async.parallel and async.waterfall, for writing tasks pipelines.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djordjeparovic/PippiLine.git"
+  },
+  "keywords": [
+    "parallel",
+    "waterfall",
+    "async",
+    "pipeline"
+  ],
+  "author": "Djordje Parovic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djordjeparovic/PippiLine/issues"
+  },
+  "homepage": "https://github.com/djordjeparovic/PippiLine",
+  "dependencies": {
+    "async": "^1.5.2"
+  }
+}
