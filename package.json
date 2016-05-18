@@ -1,6 +1,6 @@
 {
   "name": "pippiline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Module which enables more readable syntax for combining async.parallel and async.waterfall, for writing tasks pipelines.",
   "main": "index.js",
   "scripts": {
